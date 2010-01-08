@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
+		F808811D10F6D6DB00CE715C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F808811C10F6D6DB00CE715C /* libz.dylib */; };
+		F808841B10F79C4500CE715C /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883B810F79C4400CE715C /* Book.m */; };
+		F808841C10F79C4500CE715C /* BookContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883BA10F79C4400CE715C /* BookContentViewController.m */; };
+		F808841D10F79C4500CE715C /* BookContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80883BB10F79C4400CE715C /* BookContentViewController.xib */; };
+		F808841E10F79C4500CE715C /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883BD10F79C4400CE715C /* BookDetailViewController.m */; };
+		F808841F10F79C4500CE715C /* BookDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80883BE10F79C4400CE715C /* BookDetailViewController.xib */; };
+		F808842010F79C4500CE715C /* BookIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883C010F79C4400CE715C /* BookIndexViewController.m */; };
+		F808842110F79C4500CE715C /* BookReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883C210F79C4400CE715C /* BookReaderAppDelegate.m */; };
+		F808842210F79C4500CE715C /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883C510F79C4400CE715C /* BookViewController.m */; };
+		F808842310F79C4500CE715C /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80883C610F79C4400CE715C /* BookViewController.xib */; };
+		F808842410F79C4500CE715C /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883C810F79C4400CE715C /* Catalog.m */; };
+		F808842510F79C4500CE715C /* CatalogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883CA10F79C4400CE715C /* CatalogEntry.m */; };
+		F808842610F79C4500CE715C /* CatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883CC10F79C4400CE715C /* CatalogViewController.m */; };
+		F808842710F79C4500CE715C /* CatalogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80883CD10F79C4400CE715C /* CatalogViewController.xib */; };
+		F808842810F79C4500CE715C /* Download.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883CF10F79C4400CE715C /* Download.m */; };
+		F808842910F79C4500CE715C /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883D110F79C4400CE715C /* DownloadManager.m */; };
+		F808842A10F79C4500CE715C /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883D310F79C4400CE715C /* DownloadOperation.m */; };
+		F808842B10F79C4500CE715C /* DownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883D510F79C4400CE715C /* DownloadsViewController.m */; };
+		F808842C10F79C4500CE715C /* DownloadsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80883D610F79C4400CE715C /* DownloadsViewController.xib */; };
+		F808842D10F79C4500CE715C /* DownloadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883D810F79C4400CE715C /* DownloadTableViewCell.m */; };
+		F808842E10F79C4500CE715C /* DownloadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80883D910F79C4400CE715C /* DownloadTableViewCell.xib */; };
+		F808842F10F79C4500CE715C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883DA10F79C4400CE715C /* main.m */; };
+		F808843010F79C4500CE715C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80883DB10F79C4400CE715C /* MainWindow.xib */; };
+		F808843110F79C4500CE715C /* NCXNavigationDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883DD10F79C4400CE715C /* NCXNavigationDefinition.m */; };
+		F808843210F79C4500CE715C /* NCXNavigationPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883DF10F79C4400CE715C /* NCXNavigationPoint.m */; };
+		F808843310F79C4500CE715C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883E110F79C4400CE715C /* NSObject+SBJSON.m */; };
+		F808843410F79C4500CE715C /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883E310F79C4400CE715C /* NSString+SBJSON.m */; };
+		F808843510F79C4500CE715C /* OCFContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883E510F79C4400CE715C /* OCFContainer.m */; };
+		F808843610F79C4500CE715C /* OCFRootFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883E710F79C4400CE715C /* OCFRootFile.m */; };
+		F808843710F79C4500CE715C /* OEPBSPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883E910F79C4400CE715C /* OEPBSPackage.m */; };
+		F808843810F79C4500CE715C /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883EB10F79C4400CE715C /* SBJSON.m */; };
+		F808843910F79C4500CE715C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883ED10F79C4400CE715C /* SBJsonBase.m */; };
+		F808843A10F79C4500CE715C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883EF10F79C4400CE715C /* SBJsonParser.m */; };
+		F808843B10F79C4500CE715C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883F110F79C4400CE715C /* SBJsonWriter.m */; };
+		F808843C10F79C4500CE715C /* Shelf.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883F310F79C4400CE715C /* Shelf.m */; };
+		F808843D10F79C4500CE715C /* ShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80883F510F79C4500CE715C /* ShelfViewController.m */; };
+		F808843E10F79C4500CE715C /* ShelfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80883F610F79C4500CE715C /* ShelfViewController.xib */; };
+		F808844310F79C4500CE715C /* XMLDigester.m in Sources */ = {isa = PBXBuildFile; fileRef = F808840510F79C4500CE715C /* XMLDigester.m */; };
+		F808844410F79C4500CE715C /* XMLDigesterCallMethodRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F808840710F79C4500CE715C /* XMLDigesterCallMethodRule.m */; };
+		F808844510F79C4500CE715C /* XMLDigesterCallMethodWithAttributeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F808840910F79C4500CE715C /* XMLDigesterCallMethodWithAttributeRule.m */; };
+		F808844610F79C4500CE715C /* XMLDigesterCallMethodWithElementBodyRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F808840B10F79C4500CE715C /* XMLDigesterCallMethodWithElementBodyRule.m */; };
+		F808844710F79C4500CE715C /* XMLDigesterCallParamRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F808840D10F79C4500CE715C /* XMLDigesterCallParamRule.m */; };
+		F808844810F79C4500CE715C /* XMLDigesterObjectCreateRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F808840F10F79C4500CE715C /* XMLDigesterObjectCreateRule.m */; };
+		F808844910F79C4500CE715C /* XMLDigesterRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F808841110F79C4500CE715C /* XMLDigesterRule.m */; };
+		F808844A10F79C4500CE715C /* XMLDigesterSetNextRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F808841310F79C4500CE715C /* XMLDigesterSetNextRule.m */; };
+		F808844B10F79C4500CE715C /* XMLDigesterSetPropertiesRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F808841510F79C4500CE715C /* XMLDigesterSetPropertiesRule.m */; };
+		F808844C10F79C4500CE715C /* XMLDigesterSetPropertyRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F808841710F79C4500CE715C /* XMLDigesterSetPropertyRule.m */; };
+		F808844D10F79C4500CE715C /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = F808841A10F79C4500CE715C /* ZipArchive.mm */; };
+		F808846010F79CA600CE715C /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = F808845810F79CA600CE715C /* ioapi.c */; };
+		F808846110F79CA600CE715C /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = F808845A10F79CA600CE715C /* mztools.c */; };
+		F808846210F79CA600CE715C /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = F808845C10F79CA600CE715C /* unzip.c */; };
+		F808846310F79CA600CE715C /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = F808845E10F79CA600CE715C /* zip.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* BookReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* BookReader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BookReader-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F808811C10F6D6DB00CE715C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F80883B710F79C4400CE715C /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		F80883B810F79C4400CE715C /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		F80883B910F79C4400CE715C /* BookContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookContentViewController.h; sourceTree = "<group>"; };
+		F80883BA10F79C4400CE715C /* BookContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookContentViewController.m; sourceTree = "<group>"; };
+		F80883BB10F79C4400CE715C /* BookContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookContentViewController.xib; sourceTree = "<group>"; };
+		F80883BC10F79C4400CE715C /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		F80883BD10F79C4400CE715C /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		F80883BE10F79C4400CE715C /* BookDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailViewController.xib; sourceTree = "<group>"; };
+		F80883BF10F79C4400CE715C /* BookIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookIndexViewController.h; sourceTree = "<group>"; };
+		F80883C010F79C4400CE715C /* BookIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookIndexViewController.m; sourceTree = "<group>"; };
+		F80883C110F79C4400CE715C /* BookReaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReaderAppDelegate.h; sourceTree = "<group>"; };
+		F80883C210F79C4400CE715C /* BookReaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReaderAppDelegate.m; sourceTree = "<group>"; };
+		F80883C310F79C4400CE715C /* BookReaderCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReaderCommon.h; sourceTree = "<group>"; };
+		F80883C410F79C4400CE715C /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		F80883C510F79C4400CE715C /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		F80883C610F79C4400CE715C /* BookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
+		F80883C710F79C4400CE715C /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
+		F80883C810F79C4400CE715C /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalog.m; sourceTree = "<group>"; };
+		F80883C910F79C4400CE715C /* CatalogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogEntry.h; sourceTree = "<group>"; };
+		F80883CA10F79C4400CE715C /* CatalogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogEntry.m; sourceTree = "<group>"; };
+		F80883CB10F79C4400CE715C /* CatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogViewController.h; sourceTree = "<group>"; };
+		F80883CC10F79C4400CE715C /* CatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogViewController.m; sourceTree = "<group>"; };
+		F80883CD10F79C4400CE715C /* CatalogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogViewController.xib; sourceTree = "<group>"; };
+		F80883CE10F79C4400CE715C /* Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Download.h; sourceTree = "<group>"; };
+		F80883CF10F79C4400CE715C /* Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Download.m; sourceTree = "<group>"; };
+		F80883D010F79C4400CE715C /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		F80883D110F79C4400CE715C /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		F80883D210F79C4400CE715C /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		F80883D310F79C4400CE715C /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
+		F80883D410F79C4400CE715C /* DownloadsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadsViewController.h; sourceTree = "<group>"; };
+		F80883D510F79C4400CE715C /* DownloadsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadsViewController.m; sourceTree = "<group>"; };
+		F80883D610F79C4400CE715C /* DownloadsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadsViewController.xib; sourceTree = "<group>"; };
+		F80883D710F79C4400CE715C /* DownloadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewCell.h; sourceTree = "<group>"; };
+		F80883D810F79C4400CE715C /* DownloadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewCell.m; sourceTree = "<group>"; };
+		F80883D910F79C4400CE715C /* DownloadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadTableViewCell.xib; sourceTree = "<group>"; };
+		F80883DA10F79C4400CE715C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F80883DB10F79C4400CE715C /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		F80883DC10F79C4400CE715C /* NCXNavigationDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCXNavigationDefinition.h; sourceTree = "<group>"; };
+		F80883DD10F79C4400CE715C /* NCXNavigationDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCXNavigationDefinition.m; sourceTree = "<group>"; };
+		F80883DE10F79C4400CE715C /* NCXNavigationPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCXNavigationPoint.h; sourceTree = "<group>"; };
+		F80883DF10F79C4400CE715C /* NCXNavigationPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCXNavigationPoint.m; sourceTree = "<group>"; };
+		F80883E010F79C4400CE715C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		F80883E110F79C4400CE715C /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		F80883E210F79C4400CE715C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		F80883E310F79C4400CE715C /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		F80883E410F79C4400CE715C /* OCFContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFContainer.h; sourceTree = "<group>"; };
+		F80883E510F79C4400CE715C /* OCFContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFContainer.m; sourceTree = "<group>"; };
+		F80883E610F79C4400CE715C /* OCFRootFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFRootFile.h; sourceTree = "<group>"; };
+		F80883E710F79C4400CE715C /* OCFRootFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFRootFile.m; sourceTree = "<group>"; };
+		F80883E810F79C4400CE715C /* OEPBSPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEPBSPackage.h; sourceTree = "<group>"; };
+		F80883E910F79C4400CE715C /* OEPBSPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEPBSPackage.m; sourceTree = "<group>"; };
+		F80883EA10F79C4400CE715C /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		F80883EB10F79C4400CE715C /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		F80883EC10F79C4400CE715C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		F80883ED10F79C4400CE715C /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		F80883EE10F79C4400CE715C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		F80883EF10F79C4400CE715C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		F80883F010F79C4400CE715C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		F80883F110F79C4400CE715C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		F80883F210F79C4400CE715C /* Shelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shelf.h; sourceTree = "<group>"; };
+		F80883F310F79C4400CE715C /* Shelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shelf.m; sourceTree = "<group>"; };
+		F80883F410F79C4500CE715C /* ShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShelfViewController.h; sourceTree = "<group>"; };
+		F80883F510F79C4500CE715C /* ShelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShelfViewController.m; sourceTree = "<group>"; };
+		F80883F610F79C4500CE715C /* ShelfViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShelfViewController.xib; sourceTree = "<group>"; };
+		F80883F810F79C4500CE715C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		F808840410F79C4500CE715C /* XMLDigester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigester.h; sourceTree = "<group>"; };
+		F808840510F79C4500CE715C /* XMLDigester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigester.m; sourceTree = "<group>"; };
+		F808840610F79C4500CE715C /* XMLDigesterCallMethodRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigesterCallMethodRule.h; sourceTree = "<group>"; };
+		F808840710F79C4500CE715C /* XMLDigesterCallMethodRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigesterCallMethodRule.m; sourceTree = "<group>"; };
+		F808840810F79C4500CE715C /* XMLDigesterCallMethodWithAttributeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigesterCallMethodWithAttributeRule.h; sourceTree = "<group>"; };
+		F808840910F79C4500CE715C /* XMLDigesterCallMethodWithAttributeRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigesterCallMethodWithAttributeRule.m; sourceTree = "<group>"; };
+		F808840A10F79C4500CE715C /* XMLDigesterCallMethodWithElementBodyRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigesterCallMethodWithElementBodyRule.h; sourceTree = "<group>"; };
+		F808840B10F79C4500CE715C /* XMLDigesterCallMethodWithElementBodyRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigesterCallMethodWithElementBodyRule.m; sourceTree = "<group>"; };
+		F808840C10F79C4500CE715C /* XMLDigesterCallParamRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigesterCallParamRule.h; sourceTree = "<group>"; };
+		F808840D10F79C4500CE715C /* XMLDigesterCallParamRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigesterCallParamRule.m; sourceTree = "<group>"; };
+		F808840E10F79C4500CE715C /* XMLDigesterObjectCreateRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigesterObjectCreateRule.h; sourceTree = "<group>"; };
+		F808840F10F79C4500CE715C /* XMLDigesterObjectCreateRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigesterObjectCreateRule.m; sourceTree = "<group>"; };
+		F808841010F79C4500CE715C /* XMLDigesterRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigesterRule.h; sourceTree = "<group>"; };
+		F808841110F79C4500CE715C /* XMLDigesterRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigesterRule.m; sourceTree = "<group>"; };
+		F808841210F79C4500CE715C /* XMLDigesterSetNextRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigesterSetNextRule.h; sourceTree = "<group>"; };
+		F808841310F79C4500CE715C /* XMLDigesterSetNextRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigesterSetNextRule.m; sourceTree = "<group>"; };
+		F808841410F79C4500CE715C /* XMLDigesterSetPropertiesRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigesterSetPropertiesRule.h; sourceTree = "<group>"; };
+		F808841510F79C4500CE715C /* XMLDigesterSetPropertiesRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigesterSetPropertiesRule.m; sourceTree = "<group>"; };
+		F808841610F79C4500CE715C /* XMLDigesterSetPropertyRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDigesterSetPropertyRule.h; sourceTree = "<group>"; };
+		F808841710F79C4500CE715C /* XMLDigesterSetPropertyRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDigesterSetPropertyRule.m; sourceTree = "<group>"; };
+		F808841910F79C4500CE715C /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		F808841A10F79C4500CE715C /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		F808845710F79CA600CE715C /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		F808845810F79CA600CE715C /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		F808845910F79CA600CE715C /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		F808845A10F79CA600CE715C /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		F808845B10F79CA600CE715C /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		F808845C10F79CA600CE715C /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		F808845D10F79CA600CE715C /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		F808845E10F79CA600CE715C /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		F808845F10F79CA600CE715C /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				F808811D10F6D6DB00CE715C /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* BookReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* BookReader */ = {
+			isa = PBXGroup;
+			children = (
+				F80883B510F79C4400CE715C /* Sources */,
+				F8087CF210F6564100CE715C /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F808811C10F6D6DB00CE715C /* libz.dylib */,
+			);
+			name = BookReader;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765070DF74369002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8087CF210F6564100CE715C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* BookReader-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F80883B510F79C4400CE715C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F80883B610F79C4400CE715C /* Application */,
+				F80883F710F79C4500CE715C /* JSON */,
+				F808840310F79C4500CE715C /* XMLDigester */,
+				F808841810F79C4500CE715C /* Zip */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F80883B610F79C4400CE715C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F80883B710F79C4400CE715C /* Book.h */,
+				F80883B810F79C4400CE715C /* Book.m */,
+				F80883B910F79C4400CE715C /* BookContentViewController.h */,
+				F80883BA10F79C4400CE715C /* BookContentViewController.m */,
+				F80883BB10F79C4400CE715C /* BookContentViewController.xib */,
+				F80883BC10F79C4400CE715C /* BookDetailViewController.h */,
+				F80883BD10F79C4400CE715C /* BookDetailViewController.m */,
+				F80883BE10F79C4400CE715C /* BookDetailViewController.xib */,
+				F80883BF10F79C4400CE715C /* BookIndexViewController.h */,
+				F80883C010F79C4400CE715C /* BookIndexViewController.m */,
+				F80883C110F79C4400CE715C /* BookReaderAppDelegate.h */,
+				F80883C210F79C4400CE715C /* BookReaderAppDelegate.m */,
+				F80883C310F79C4400CE715C /* BookReaderCommon.h */,
+				F80883C410F79C4400CE715C /* BookViewController.h */,
+				F80883C510F79C4400CE715C /* BookViewController.m */,
+				F80883C610F79C4400CE715C /* BookViewController.xib */,
+				F80883C710F79C4400CE715C /* Catalog.h */,
+				F80883C810F79C4400CE715C /* Catalog.m */,
+				F80883C910F79C4400CE715C /* CatalogEntry.h */,
+				F80883CA10F79C4400CE715C /* CatalogEntry.m */,
+				F80883CB10F79C4400CE715C /* CatalogViewController.h */,
+				F80883CC10F79C4400CE715C /* CatalogViewController.m */,
+				F80883CD10F79C4400CE715C /* CatalogViewController.xib */,
+				F80883CE10F79C4400CE715C /* Download.h */,
+				F80883CF10F79C4400CE715C /* Download.m */,
+				F80883D010F79C4400CE715C /* DownloadManager.h */,
+				F80883D110F79C4400CE715C /* DownloadManager.m */,
+				F80883D210F79C4400CE715C /* DownloadOperation.h */,
+				F80883D310F79C4400CE715C /* DownloadOperation.m */,
+				F80883D410F79C4400CE715C /* DownloadsViewController.h */,
+				F80883D510F79C4400CE715C /* DownloadsViewController.m */,
+				F80883D610F79C4400CE715C /* DownloadsViewController.xib */,
+				F80883D710F79C4400CE715C /* DownloadTableViewCell.h */,
+				F80883D810F79C4400CE715C /* DownloadTableViewCell.m */,
+				F80883D910F79C4400CE715C /* DownloadTableViewCell.xib */,
+				F80883DA10F79C4400CE715C /* main.m */,
+				F80883DB10F79C4400CE715C /* MainWindow.xib */,
+				F80883DC10F79C4400CE715C /* NCXNavigationDefinition.h */,
+				F80883DD10F79C4400CE715C /* NCXNavigationDefinition.m */,
+				F80883DE10F79C4400CE715C /* NCXNavigationPoint.h */,
+				F80883DF10F79C4400CE715C /* NCXNavigationPoint.m */,
+				F80883E010F79C4400CE715C /* NSObject+SBJSON.h */,
+				F80883E110F79C4400CE715C /* NSObject+SBJSON.m */,
+				F80883E210F79C4400CE715C /* NSString+SBJSON.h */,
+				F80883E310F79C4400CE715C /* NSString+SBJSON.m */,
+				F80883E410F79C4400CE715C /* OCFContainer.h */,
+				F80883E510F79C4400CE715C /* OCFContainer.m */,
+				F80883E610F79C4400CE715C /* OCFRootFile.h */,
+				F80883E710F79C4400CE715C /* OCFRootFile.m */,
+				F80883E810F79C4400CE715C /* OEPBSPackage.h */,
+				F80883E910F79C4400CE715C /* OEPBSPackage.m */,
+				F80883EA10F79C4400CE715C /* SBJSON.h */,
+				F80883EB10F79C4400CE715C /* SBJSON.m */,
+				F80883EC10F79C4400CE715C /* SBJsonBase.h */,
+				F80883ED10F79C4400CE715C /* SBJsonBase.m */,
+				F80883EE10F79C4400CE715C /* SBJsonParser.h */,
+				F80883EF10F79C4400CE715C /* SBJsonParser.m */,
+				F80883F010F79C4400CE715C /* SBJsonWriter.h */,
+				F80883F110F79C4400CE715C /* SBJsonWriter.m */,
+				F80883F210F79C4400CE715C /* Shelf.h */,
+				F80883F310F79C4400CE715C /* Shelf.m */,
+				F80883F410F79C4500CE715C /* ShelfViewController.h */,
+				F80883F510F79C4500CE715C /* ShelfViewController.m */,
+				F80883F610F79C4500CE715C /* ShelfViewController.xib */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F80883F710F79C4500CE715C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F80883F810F79C4500CE715C /* JSON.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F808840310F79C4500CE715C /* XMLDigester */ = {
+			isa = PBXGroup;
+			children = (
+				F808840410F79C4500CE715C /* XMLDigester.h */,
+				F808840510F79C4500CE715C /* XMLDigester.m */,
+				F808840610F79C4500CE715C /* XMLDigesterCallMethodRule.h */,
+				F808840710F79C4500CE715C /* XMLDigesterCallMethodRule.m */,
+				F808840810F79C4500CE715C /* XMLDigesterCallMethodWithAttributeRule.h */,
+				F808840910F79C4500CE715C /* XMLDigesterCallMethodWithAttributeRule.m */,
+				F808840A10F79C4500CE715C /* XMLDigesterCallMethodWithElementBodyRule.h */,
+				F808840B10F79C4500CE715C /* XMLDigesterCallMethodWithElementBodyRule.m */,
+				F808840C10F79C4500CE715C /* XMLDigesterCallParamRule.h */,
+				F808840D10F79C4500CE715C /* XMLDigesterCallParamRule.m */,
+				F808840E10F79C4500CE715C /* XMLDigesterObjectCreateRule.h */,
+				F808840F10F79C4500CE715C /* XMLDigesterObjectCreateRule.m */,
+				F808841010F79C4500CE715C /* XMLDigesterRule.h */,
+				F808841110F79C4500CE715C /* XMLDigesterRule.m */,
+				F808841210F79C4500CE715C /* XMLDigesterSetNextRule.h */,
+				F808841310F79C4500CE715C /* XMLDigesterSetNextRule.m */,
+				F808841410F79C4500CE715C /* XMLDigesterSetPropertiesRule.h */,
+				F808841510F79C4500CE715C /* XMLDigesterSetPropertiesRule.m */,
+				F808841610F79C4500CE715C /* XMLDigesterSetPropertyRule.h */,
+				F808841710F79C4500CE715C /* XMLDigesterSetPropertyRule.m */,
+			);
+			path = XMLDigester;
+			sourceTree = "<group>";
+		};
+		F808841810F79C4500CE715C /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				F808845610F79CA600CE715C /* minizip */,
+				F808841910F79C4500CE715C /* ZipArchive.h */,
+				F808841A10F79C4500CE715C /* ZipArchive.mm */,
+			);
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		F808845610F79CA600CE715C /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				F808845710F79CA600CE715C /* crypt.h */,
+				F808845810F79CA600CE715C /* ioapi.c */,
+				F808845910F79CA600CE715C /* ioapi.h */,
+				F808845A10F79CA600CE715C /* mztools.c */,
+				F808845B10F79CA600CE715C /* mztools.h */,
+				F808845C10F79CA600CE715C /* unzip.c */,
+				F808845D10F79CA600CE715C /* unzip.h */,
+				F808845E10F79CA600CE715C /* zip.c */,
+				F808845F10F79CA600CE715C /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* BookReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BookReader" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookReader;
+			productName = BookReader;
+			productReference = 1D6058910D05DD3D006BFB54 /* BookReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BookReader" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* BookReader */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* BookReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F808841D10F79C4500CE715C /* BookContentViewController.xib in Resources */,
+				F808841F10F79C4500CE715C /* BookDetailViewController.xib in Resources */,
+				F808842310F79C4500CE715C /* BookViewController.xib in Resources */,
+				F808842710F79C4500CE715C /* CatalogViewController.xib in Resources */,
+				F808842C10F79C4500CE715C /* DownloadsViewController.xib in Resources */,
+				F808842E10F79C4500CE715C /* DownloadTableViewCell.xib in Resources */,
+				F808843010F79C4500CE715C /* MainWindow.xib in Resources */,
+				F808843E10F79C4500CE715C /* ShelfViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F808841B10F79C4500CE715C /* Book.m in Sources */,
+				F808841C10F79C4500CE715C /* BookContentViewController.m in Sources */,
+				F808841E10F79C4500CE715C /* BookDetailViewController.m in Sources */,
+				F808842010F79C4500CE715C /* BookIndexViewController.m in Sources */,
+				F808842110F79C4500CE715C /* BookReaderAppDelegate.m in Sources */,
+				F808842210F79C4500CE715C /* BookViewController.m in Sources */,
+				F808842410F79C4500CE715C /* Catalog.m in Sources */,
+				F808842510F79C4500CE715C /* CatalogEntry.m in Sources */,
+				F808842610F79C4500CE715C /* CatalogViewController.m in Sources */,
+				F808842810F79C4500CE715C /* Download.m in Sources */,
+				F808842910F79C4500CE715C /* DownloadManager.m in Sources */,
+				F808842A10F79C4500CE715C /* DownloadOperation.m in Sources */,
+				F808842B10F79C4500CE715C /* DownloadsViewController.m in Sources */,
+				F808842D10F79C4500CE715C /* DownloadTableViewCell.m in Sources */,
+				F808842F10F79C4500CE715C /* main.m in Sources */,
+				F808843110F79C4500CE715C /* NCXNavigationDefinition.m in Sources */,
+				F808843210F79C4500CE715C /* NCXNavigationPoint.m in Sources */,
+				F808843310F79C4500CE715C /* NSObject+SBJSON.m in Sources */,
+				F808843410F79C4500CE715C /* NSString+SBJSON.m in Sources */,
+				F808843510F79C4500CE715C /* OCFContainer.m in Sources */,
+				F808843610F79C4500CE715C /* OCFRootFile.m in Sources */,
+				F808843710F79C4500CE715C /* OEPBSPackage.m in Sources */,
+				F808843810F79C4500CE715C /* SBJSON.m in Sources */,
+				F808843910F79C4500CE715C /* SBJsonBase.m in Sources */,
+				F808843A10F79C4500CE715C /* SBJsonParser.m in Sources */,
+				F808843B10F79C4500CE715C /* SBJsonWriter.m in Sources */,
+				F808843C10F79C4500CE715C /* Shelf.m in Sources */,
+				F808843D10F79C4500CE715C /* ShelfViewController.m in Sources */,
+				F808844310F79C4500CE715C /* XMLDigester.m in Sources */,
+				F808844410F79C4500CE715C /* XMLDigesterCallMethodRule.m in Sources */,
+				F808844510F79C4500CE715C /* XMLDigesterCallMethodWithAttributeRule.m in Sources */,
+				F808844610F79C4500CE715C /* XMLDigesterCallMethodWithElementBodyRule.m in Sources */,
+				F808844710F79C4500CE715C /* XMLDigesterCallParamRule.m in Sources */,
+				F808844810F79C4500CE715C /* XMLDigesterObjectCreateRule.m in Sources */,
+				F808844910F79C4500CE715C /* XMLDigesterRule.m in Sources */,
+				F808844A10F79C4500CE715C /* XMLDigesterSetNextRule.m in Sources */,
+				F808844B10F79C4500CE715C /* XMLDigesterSetPropertiesRule.m in Sources */,
+				F808844C10F79C4500CE715C /* XMLDigesterSetPropertyRule.m in Sources */,
+				F808844D10F79C4500CE715C /* ZipArchive.mm in Sources */,
+				F808846010F79CA600CE715C /* ioapi.c in Sources */,
+				F808846110F79CA600CE715C /* mztools.c in Sources */,
+				F808846210F79CA600CE715C /* unzip.c in Sources */,
+				F808846310F79CA600CE715C /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BookReader_Prefix.pch;
+				INFOPLIST_FILE = "BookReader-Info.plist";
+				PRODUCT_NAME = BookReader;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BookReader_Prefix.pch;
+				INFOPLIST_FILE = "BookReader-Info.plist";
+				PRODUCT_NAME = BookReader;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BookReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BookReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
